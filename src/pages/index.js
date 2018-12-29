@@ -2,14 +2,20 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import Image from '../components/image'
+import '../styles/flexbox.css'
 
 const IndexPage = () => (
   <Layout>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-      <Image />
+    <div className="container">
+      <div className="item">
+        <Image />
+      </div>
+      <div className="item">
+        <h1>ERIC HARTLINE</h1>
+        <hr />
+        <p className="about">Web Developer</p>
+        <p className="about">Chicago, IL</p>
+      </div>
     </div>
   </Layout>
 )
