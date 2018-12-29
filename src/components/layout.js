@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
@@ -17,12 +17,12 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <>
+      <Fragment>
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: 'description', content: 'Eric Hartline is a web developer based in Chicago, IL.' },
+            { name: 'keywords', content: 'eric hartline, web developer, reactjs' },
           ]}
         >
           <html lang="en" />
@@ -38,7 +38,7 @@ const Layout = ({ children }) => (
         >
           {children}
         </div>
-      </>
+      </Fragment>
     )}
   />
 )
