@@ -51,7 +51,7 @@ const IndexPage = () => (
             {icons.map((icon, i) => {
               return (
                 <li>
-                  <a href={icon.url} className="social">
+                  <a href={icon.url} target="_blank" rel="noopener" className="social">
                     <FontAwesomeIcon icon={icon.icon} />
                   </a>
                 </li>
