@@ -5,8 +5,8 @@ import '../styles/subpages.css'
 
 const About = () => (
   <Layout>
-    <div className="container">
-      <div className="item">
+    <div className="subcontainer">
+      <div className="subitem">
         <h1>About page</h1>
         <p>Will provide a mini-bio here.</p>
       </div>
