@@ -12,6 +12,29 @@ import Layout from '../components/layout'
 import Image from '../components/image'
 import '../styles/flexbox.css'
 
+const icons = [
+  {
+    icon: faGithub,
+    url: 'https://github.com/wildlifehexagon',
+  },
+  {
+    icon: faLinkedin,
+    url: 'https://www.linkedin.com/in/erichartline',
+  },
+  {
+    icon: faTwitter,
+    url: 'https://twitter.com/wildlifehexagon',
+  },
+  {
+    icon: faFreeCodeCamp,
+    url: 'https://www.freecodecamp.com/wildlifehexagon',
+  },
+  {
+    icon: faEnvelope,
+    url: 'mailto:hartline.eric@gmail.com',
+  },
+]
+
 const IndexPage = () => (
   <Layout>
     <div className="container">
@@ -25,31 +48,15 @@ const IndexPage = () => (
         <p className="about">Chicago, IL</p>
         <span>
           <ul className="list-inline">
-            <li>
-              <a href="#" className="social">
-                <FontAwesomeIcon icon={faGithub} />
-              </a>
-            </li>
-            <li>
-              <a href="#" className="social">
-                <FontAwesomeIcon icon={faLinkedin} />
-              </a>
-            </li>
-            <li>
-              <a href="#" className="social">
-                <FontAwesomeIcon icon={faTwitter} />
-              </a>
-            </li>
-            <li>
-              <a href="#" className="social">
-                <FontAwesomeIcon icon={faFreeCodeCamp} />
-              </a>
-            </li>
-            <li>
-              <a href="#" className="social">
-                <FontAwesomeIcon icon={faEnvelope} />
-              </a>
-            </li>
+            {icons.map((icon, i) => {
+              return (
+                <li>
+                  <a href={icon.url} className="social">
+                    <FontAwesomeIcon icon={icon.icon} />
+                  </a>
+                </li>
+              )
+            })}
           </ul>
         </span>
       </div>
