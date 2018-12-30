@@ -23,7 +23,7 @@ const IndexPage = () => (
         <hr />
         <p className="about">Web Developer</p>
         <p className="about">Chicago, IL</p>
-        <p>
+        <span>
           <ul className="list-inline">
             <li>
               <a href="#" className="social">
@@ -51,7 +51,7 @@ const IndexPage = () => (
               </a>
             </li>
           </ul>
-        </p>
+        </span>
       </div>
     </div>
   </Layout>
