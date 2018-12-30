@@ -1,13 +1,16 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
+import '../styles/subpages.css'
 
 const About = () => (
   <Layout>
-    <h1>About page</h1>
-    <p>Will provide a mini-bio here.</p>
-    <Link to="/">Go back to the homepage</Link>
+    <div className="container">
+      <div className="item">
+        <h1>About page</h1>
+        <p>Will provide a mini-bio here.</p>
+      </div>
+    </div>
   </Layout>
 )
 
